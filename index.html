@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#FFFDF9">
+    <title>Wedding Invitation: Aravind & Shruti</title>
+    <meta name="description" content="Join Aravind Rb and Shruti R Nair as they begin forever.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wedding Invitation: Aravind & Shruti">
+    <meta property="og:description" content="Join Aravind Rb and Shruti R Nair as they begin forever.">
+    <meta property="og:image" content="assets/social-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wedding Invitation: Aravind & Shruti">
+    <meta name="twitter:description" content="Join Aravind Rb and Shruti R Nair as they begin forever.">
+    <meta name="twitter:image" content="assets/social-preview.jpg">
+    <link rel="preload" href="assets/hero-rings.webp" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <audio id="weddingMusic" preload="auto" loop></audio>
+      <canvas id="petalCanvas" aria-hidden="true"></canvas>
+
+      <section class="cover" id="cover" aria-label="Opening invitation">
+        <div class="cover__image" aria-hidden="true"></div>
+        <div class="cover__veil cover__veil--left" aria-hidden="true"></div>
+        <div class="cover__veil cover__veil--right" aria-hidden="true"></div>
+        <div class="cover__content">
+          <div class="crest" data-config="initials"></div>
+          <p class="overline" data-config="coverLine"></p>
+          <button class="enter-button" id="enterButton" type="button">
+            <span>Tap to Open</span>
+          </button>
+        </div>
+      </section>
+
+      <main class="site" id="site" aria-live="polite">
+        <section class="hero section">
+          <img class="hero__image" src="assets/hero-rings.webp" alt="" decoding="async">
+          <div class="hero__shade" aria-hidden="true"></div>
+          <div class="hero__content reveal">
+            <p class="overline" data-config="heroKicker"></p>
+            <h1 class="shine"><span data-config="groomName"></span><small>&</small><span data-config="brideName"></span></h1>
+            <p class="hero__subline" data-config="heroSubline"></p>
+          </div>
+          <div class="scroll-cue" aria-hidden="true"><span></span></div>
+        </section>
+
+        <section class="message section reveal">
+          <p class="overline">Dear family and friends</p>
+          <h2>Our hearts have found their home.</h2>
+          <p data-config="invitationMessage"></p>
+        </section>
+
+        <section class="scratch-section section reveal" aria-labelledby="dateRevealTitle">
+          <p class="overline">The auspicious moment</p>
+          <h2 id="dateRevealTitle">Scratch to reveal the date</h2>
+          <div class="scratch-card" id="scratchCard">
+            <div class="date-card">
+              <strong data-config="weddingDateDisplay"></strong>
+              <span data-config="weddingTimeDisplay"></span>
+            </div>
+            <canvas id="scratchCanvas" aria-label="Scratch the gold card to reveal the wedding date"></canvas>
+            <div class="scratch-hint" id="scratchHint">Trace over the gold</div>
+          </div>
+        </section>
+
+        <section class="countdown section reveal" aria-labelledby="countdownTitle">
+          <p class="overline">Counting the days</p>
+          <h2 id="countdownTitle">Until we say yes.</h2>
+          <div class="countdown-grid" id="countdownGrid">
+            <div><strong data-count="days">0</strong><span>Days</span></div>
+            <div><strong data-count="hours">0</strong><span>Hours</span></div>
+            <div><strong data-count="minutes">0</strong><span>Minutes</span></div>
+            <div><strong data-count="seconds">0</strong><span>Seconds</span></div>
+          </div>
+        </section>
+
+        <section class="gallery section" aria-labelledby="galleryTitle">
+          <div class="gallery__intro reveal">
+            <p class="overline">Before the wedding bells</p>
+            <h2 id="galleryTitle" data-config="galleryIntro"></h2>
+          </div>
+          <div class="gallery__list" id="galleryList"></div>
+        </section>
+
+        <section class="venue section reveal" aria-labelledby="venueTitle">
+          <p class="overline">Honor us with your presence</p>
+          <h2 id="venueTitle" data-config="venueName"></h2>
+          <p><span data-config="weddingDateDisplay"></span> at <span data-config="weddingTimeDisplay"></span></p>
+          <a class="primary-link" id="mapLink" target="_blank" rel="noopener">View on Map</a>
+        </section>
+
+        <section class="rsvp section reveal" aria-labelledby="rsvpTitle">
+          <p class="overline">RSVP</p>
+          <h2 id="rsvpTitle" data-config="rsvpPrompt"></h2>
+          <form id="rsvpForm" class="rsvp-form">
+            <label>
+              <span>Name</span>
+              <input name="name" autocomplete="name" required>
+            </label>
+            <div class="choice-row" role="radiogroup" aria-label="Attendance">
+              <label><input type="radio" name="attendance" value="Joyfully attending" checked><span>Joining</span></label>
+              <label><input type="radio" name="attendance" value="Sending blessings"><span>Blessings</span></label>
+            </div>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="3"></textarea>
+            </label>
+            <button class="enter-button enter-button--small" type="submit"><span>Send RSVP</span></button>
+          </form>
+          <p class="rsvp-note" id="rsvpNote" data-config="rsvpThanks"></p>
+        </section>
+      </main>
+    </div>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

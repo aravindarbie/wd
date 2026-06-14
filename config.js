@@ -1,0 +1,37 @@
+window.WEDDING_CONFIG = {
+  groomName: "Aravind Rb",
+  brideName: "Shruti R Nair",
+  initials: "A & S",
+  weddingDateDisplay: "16th November 2026",
+  weddingTimeDisplay: "10:00 AM",
+  weddingDateISO: "2026-11-16T10:00:00+05:30",
+  venueName: "Sri Mulam Club",
+  mapsLink: "https://share.google/xM8YjNneKSJRPEgu4",
+  music: "assets/wedding-music.mp3",
+  socialTitle: "Wedding Invitation: Aravind & Shruti",
+  socialSubtitle: "Join Aravind Rb and Shruti R Nair as they begin forever.",
+  socialImage: "assets/social-preview.jpg",
+  rsvpEmail: "",
+  whatsappNumber: "",
+  invitationMessage:
+    "With hearts full of joy, we invite you to witness the beginning of our forever. Your presence will make our wedding day warmer, brighter, and more meaningful.",
+  coverLine: "A royal invitation to celebrate love",
+  heroKicker: "Together with their families",
+  heroSubline: "Request the honor of your presence",
+  galleryIntro: "A few treasured moments before the vows.",
+  rsvpPrompt: "Will you be joining us?",
+  rsvpThanks: "Thank you. Your blessing already means the world to us.",
+  photos: [
+    { src: "assets/couple-09.webp", alt: "Aravind and Shruti smiling by the sea", caption: "Sunlit beginnings" },
+    { src: "assets/couple-11.webp", alt: "Aravind and Shruti by the ocean", caption: "Close to forever" },
+    { src: "assets/couple-03.webp", alt: "Aravind and Shruti seated under a tree", caption: "Quiet conversations" },
+    { src: "assets/couple-01.webp", alt: "Aravind and Shruti in a garden", caption: "Joy in bloom" },
+    { src: "assets/couple-02.webp", alt: "Aravind and Shruti beside a golden railing", caption: "A royal pause" },
+    { src: "assets/couple-10.webp", alt: "Aravind and Shruti reflected in a mirror", caption: "A softer frame" },
+    { src: "assets/couple-05.webp", alt: "Aravind and Shruti against a brick wall", caption: "Warm laughter" },
+    { src: "assets/couple-07.webp", alt: "Aravind and Shruti at a sculptural stone setting", caption: "Carved in memory" },
+    { src: "assets/couple-06.webp", alt: "Aravind and Shruti at sunset", caption: "Golden hour promises" },
+    { src: "assets/couple-08.webp", alt: "Aravind and Shruti smiling in morning light", caption: "Morning blessings" },
+    { src: "assets/couple-04.webp", alt: "Aravind and Shruti walking together", caption: "Hand in hand" }
+  ]
+};
